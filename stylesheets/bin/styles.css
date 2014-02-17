@@ -1,0 +1,134 @@
+@font-face {
+  font-family: Quantico;
+  font-weight: normal;
+  font-style: normal;
+  src: url("../../fonts/quantico/quantico-regular-webfont.eot");
+  src: url("../../fonts/quantico/quantico-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/quantico/quantico-regular-webfont.woff") format("woff"), url("../../fonts/quantico/quantico-regular-webfont.ttf") format("truetype"), url("../../fonts/quantico/quantico-regular-webfont.svg#Quantico") format("svg"); }
+
+@font-face {
+  font-family: Quantico;
+  font-weight: bold;
+  font-style: normal;
+  src: url("../../fonts/quantico/quantico-bold-webfont.eot");
+  src: url("../../fonts/quantico/quantico-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/quantico/quantico-bold-webfont.woff") format("woff"), url("../../fonts/quantico/quantico-bold-webfont.ttf") format("truetype"), url("../../fonts/quantico/quantico-bold-webfont.svg#Quantico") format("svg"); }
+
+@font-face {
+  font-family: Quantico;
+  font-weight: normal;
+  font-style: italic;
+  src: url("../../fonts/quantico/quantico-italic-webfont.eot");
+  src: url("../../fonts/quantico/quantico-italic-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/quantico/quantico-italic-webfont.woff") format("woff"), url("../../fonts/quantico/quantico-italic-webfont.ttf") format("truetype"), url("../../fonts/quantico/quantico-italic-webfont.svg#Quantico") format("svg"); }
+
+@font-face {
+  font-family: Quantico;
+  font-weight: bold;
+  font-style: italic;
+  src: url("../../fonts/quantico/quantico-bolditalic-webfont.eot");
+  src: url("../../fonts/quantico/quantico-bolditalic-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/quantico/quantico-bolditalic-webfont.woff") format("woff"), url("../../fonts/quantico/quantico-bolditalic-webfont.ttf") format("truetype"), url("../../fonts/quantico/quantico-bolditalic-webfont.svg#Quantico") format("svg"); }
+
+body {
+  padding: 1.25em 0 0 0;
+  font-size: 16px;
+  font-family: Quantico, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #232323;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  text-rendering: optimizeLegibility;
+  font-weight: normal;
+  background-repeat: repeat;
+  background-image: url(/images/tiny-grid.png);
+  background-size: 26px 26px; }
+  @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
+    body {
+      background-image: url(/images/tiny-grid@2x.png); } }
+
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 3em;
+  line-height: 1.2; }
+  h1:after {
+    display: block;
+    content: "\00a0";
+    background: #3cc812;
+    width: 320px;
+    height: 1px;
+    margin: 0.5em auto 0 auto; }
+
+h2 {
+  text-transform: uppercase;
+  font-weight: bold; }
+
+p {
+  line-height: 18px;
+  margin: 1.5625em 0; }
+
+a {
+  text-decoration: none;
+  color: #206a0a;
+  -webkit-transition: color 300ms ease-in;
+  -moz-transition: color 300ms ease-in;
+  transition: color 300ms ease-in; }
+  a:hover {
+    color: #3cc812; }
+
+.left {
+  display: inline-block;
+  float: left;
+  overflow: hidden; }
+
+.right {
+  display: inline-block;
+  float: right;
+  overflow: hidden; }
+
+main {
+  padding: 0 1.5625em; }
+
+#my-picture {
+  position: relative;
+  top: -55px;
+  left: 1.5625em;
+  text-indent: -9999px;
+  width: 150px;
+  height: 150px;
+  border-radius: 150px;
+  border: 10px solid #3cc812;
+  background-image: url(/images/me.jpg);
+  background-repeat: no-repeat;
+  background-size: 150px 150px;
+  background-color: #3cc812; }
+  @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
+    #my-picture {
+      background-image: url(/images/me@2x.jpg); } }
+
+ul {
+  list-style-position: inside; }
+  ul li {
+    margin: 0.5em 0; }
+    ul li:before {
+      content: "\2605";
+      padding: 0 0.5em 0 0; }
+
+footer {
+  line-height: 1.75em;
+  position: relative;
+  top: 75px;
+  height: 75px;
+  background: #3cc812;
+  color: #FFF; }
+  footer a {
+    text-transform: uppercase;
+    color: #FFF; }
+    footer a:hover {
+      color: #bff8ae; }
+  footer nav {
+    position: absolute;
+    top: 35px;
+    left: 200px; }
+  @media (max-width: 500px) {
+    footer {
+      font-size: 0.75em; }
+      footer nav {
+        top: 1.875em; } }

@@ -1,0 +1,138 @@
+@import 'lib/bourbon/bourbon';
+@import 'variables';
+@import 'fonts';
+
+body {
+  padding: em(20) 0 0 0;
+  font: {
+    size: 16px;
+    family: $quantico; 
+  }
+  color: $dark-grey;
+  @include antialias;
+  background: {
+    repeat: repeat;
+    image: url(/images/tiny-grid.png);
+    size: 26px 26px;
+  }
+  @include hidpi() {
+    background-image: url(/images/tiny-grid@2x.png);
+  }
+}
+
+h1 {
+  text: {
+    align: center;
+    transform: uppercase;
+  }
+  font: {
+    weight: bold;
+    size: em(48);
+  }
+  line-height: 1.2;
+  &:after {
+    display: block;
+    content: "\00a0";
+    background: $green;
+    @include size(320px 1px);
+    margin: em(8) auto 0 auto;
+  }
+}
+
+h2 {
+  text: {
+    transform: uppercase;
+  }
+  font: {
+    weight: bold;
+
+  }
+}
+
+p {
+  line-height: 18px;
+  margin: em(25) 0;
+}
+
+a {
+  text-decoration: none;
+  color: darken($green, 20%);
+  @include transition(color 300ms ease-in);
+  &:hover {
+    color: $green;
+  }
+}
+
+.left {
+  display: inline-block;
+  float: left; 
+  overflow: hidden;
+}
+.right {
+  display: inline-block;
+  float: right;
+  overflow: hidden;
+}
+
+main {
+  padding: 0 em(25);
+}
+
+#my-picture {
+  position: relative;
+  top: -55px;
+  left: em(25);
+  text-indent: -9999px;
+  @include size(150);
+  border-radius: 150px;
+  border: 10px solid $green;
+  background: {
+    image: url(/images/me.jpg);
+    repeat: no-repeat;
+    size: 150px 150px;
+    color: $green;
+  }
+  @include hidpi() {
+    background-image: url(/images/me@2x.jpg);
+  }
+}
+
+ul {
+  list-style-position: inside;
+  li {
+    margin: em(8) 0;
+    &:before {
+      content: "\2605";
+      padding: 0 em(8) 0 0;
+    }
+  }
+}
+
+footer {
+  line-height: em(28);
+  position: relative;
+  top: 75px;
+  height: 75px;
+  background: $green;
+  color: #FFF;
+  a {
+    text-transform: uppercase;
+    color: #FFF;
+    &:hover {
+      color: lighten($green, 40%);
+    }
+  }
+  nav {
+    position: absolute;
+    top: 35px;
+    left: 200px;
+  }
+  @media (max-width: 500px) {
+    font: {
+      size: em(12);
+    }
+    nav {
+      top: em(30);
+    }
+  }
+}

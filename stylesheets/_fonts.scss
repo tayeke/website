@@ -1,0 +1,13 @@
+@include font-face(Quantico, '../../fonts/quantico/quantico-regular-webfont');
+@include font-face(Quantico, '../../fonts/quantico/quantico-bold-webfont', bold);
+@include font-face(Quantico, '../../fonts/quantico/quantico-italic-webfont', normal, italic);
+@include font-face(Quantico, '../../fonts/quantico/quantico-bolditalic-webfont', bold, italic);
+
+$quantico: Quantico,"Helvetica Neue",Helvetica,Arial,sans-serif;
+
+@mixin antialias {
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  text-rendering: optimizeLegibility;
+  font-weight: normal;
+}
