@@ -4,28 +4,24 @@
   font-style: normal;
   src: url("../../fonts/quantico/quantico-regular-webfont.eot");
   src: url("../../fonts/quantico/quantico-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/quantico/quantico-regular-webfont.woff") format("woff"), url("../../fonts/quantico/quantico-regular-webfont.ttf") format("truetype"), url("../../fonts/quantico/quantico-regular-webfont.svg#Quantico") format("svg"); }
-
 @font-face {
   font-family: Quantico;
   font-weight: bold;
   font-style: normal;
   src: url("../../fonts/quantico/quantico-bold-webfont.eot");
   src: url("../../fonts/quantico/quantico-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/quantico/quantico-bold-webfont.woff") format("woff"), url("../../fonts/quantico/quantico-bold-webfont.ttf") format("truetype"), url("../../fonts/quantico/quantico-bold-webfont.svg#Quantico") format("svg"); }
-
 @font-face {
   font-family: Quantico;
   font-weight: normal;
   font-style: italic;
   src: url("../../fonts/quantico/quantico-italic-webfont.eot");
   src: url("../../fonts/quantico/quantico-italic-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/quantico/quantico-italic-webfont.woff") format("woff"), url("../../fonts/quantico/quantico-italic-webfont.ttf") format("truetype"), url("../../fonts/quantico/quantico-italic-webfont.svg#Quantico") format("svg"); }
-
 @font-face {
   font-family: Quantico;
   font-weight: bold;
   font-style: italic;
   src: url("../../fonts/quantico/quantico-bolditalic-webfont.eot");
   src: url("../../fonts/quantico/quantico-bolditalic-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/quantico/quantico-bolditalic-webfont.woff") format("woff"), url("../../fonts/quantico/quantico-bolditalic-webfont.ttf") format("truetype"), url("../../fonts/quantico/quantico-bolditalic-webfont.svg#Quantico") format("svg"); }
-
 body {
   padding: 1.25em 0 0 0;
   font-size: 16px;
@@ -46,19 +42,115 @@ h1 {
   text-align: center;
   text-transform: uppercase;
   font-weight: bold;
-  font-size: 3em;
+  font-size: 2.875em;
   line-height: 1.2; }
   h1:after {
     display: block;
     content: "\00a0";
-    background: #3cc812;
-    width: 320px;
+    background: #3CC812;
+    width: 75vw;
     height: 1px;
+    max-width: 320px;
     margin: 0.5em auto 0 auto; }
+  h1 span {
+    display: block;
+    font-size: 0.6em; }
 
 h2 {
   text-transform: uppercase;
   font-weight: bold; }
+
+h3 {
+  font-weight: bold; }
+
+h4 {
+  text-transform: uppercase; }
+
+.owl-item h4 {
+  margin: 1vw 0 0 0; }
+
+.columns {
+  width: 90vw;
+  margin: 0 auto 2vw auto; }
+  .columns h2, .columns h3, .columns h4 {
+    text-align: center; }
+  .columns p:first-child {
+    margin-top: 0; }
+  .columns > div {
+    display: inline-block;
+    margin: 2vw;
+    box-sizing: border-box;
+    overflow: hidden;
+    width: 15vw;
+    vertical-align: top; }
+    .columns > div:last-child {
+      width: 66vw; }
+      .columns > div:last-child:after {
+        display: block;
+        content: "\00a0";
+        background: #3CC812;
+        width: 75%;
+        height: 1px;
+        max-width: 320px;
+        margin: 2.5em auto 0 auto; }
+  .columns:last-child > div:last-child:after {
+    display: none; }
+  @media (max-width: 800px) {
+    .columns {
+      display: block;
+      width: 100%; }
+      .columns > div {
+        display: block;
+        margin: 5vw 0 0 0;
+        width: auto; }
+        .columns > div:last-child {
+          width: auto; }
+          .columns > div:last-child:after {
+            margin: 3.125em auto 0 auto; }
+      .columns:last-child > div {
+        padding: 0; } }
+
+#nursegrid-logo {
+  display: block;
+  width: 90%;
+  max-width: 200px;
+  margin: 0 auto; }
+
+#roundhouse-logo {
+  display: block;
+  width: 85%;
+  max-width: 250px;
+  margin: 0 auto; }
+
+#web-devices {
+  display: block;
+  width: 90%;
+  max-width: 350px;
+  margin: 0 auto; }
+
+.rh-link {
+  overflow: hidden;
+  width: 100%; }
+  .rh-link img {
+    width: 100%; }
+
+.owl-carousel {
+  margin: 2vw 0 0 0; }
+  .owl-carousel img {
+    backface-visibility: hidden;
+    transform: translateZ(0) scale(1, 1); }
+
+.images-grid {
+  text-align: center; }
+  .images-grid .tall-slide {
+    display: inline-block;
+    width: auto;
+    margin: 0 5vw;
+    max-height: 30vw; }
+  .images-grid .wide-slide {
+    display: block;
+    width: 90%;
+    margin: 0 auto; }
 
 p {
   line-height: 18px;
@@ -71,7 +163,16 @@ a {
   -moz-transition: color 300ms ease-in;
   transition: color 300ms ease-in; }
   a:hover {
-    color: #3cc812; }
+    color: #3CC812; }
+
+.block-link {
+  display: block;
+  line-height: 18px;
+  margin: 1.5625em 0;
+  transform: translateY(0);
+  transition: transform 250ms ease-out; }
+  .block-link:hover {
+    transform: translateY(-10px); }
 
 .left {
   display: inline-block;
@@ -82,6 +183,9 @@ a {
   display: inline-block;
   float: right;
   overflow: hidden; }
+
+.text-center {
+  text-align: center; }
 
 main {
   padding: 0 1.5625em; }
@@ -94,20 +198,26 @@ main {
   width: 150px;
   height: 150px;
   border-radius: 150px;
-  border: 10px solid #3cc812;
+  border: 10px solid #3CC812;
   background-image: url(/images/me.jpg);
   background-repeat: no-repeat;
   background-size: 150px 150px;
-  background-color: #3cc812; }
+  background-color: #3CC812; }
+  @media (max-width: 500px) {
+    #my-picture {
+      width: 100px;
+      height: 100px;
+      background-size: 100px 100px; } }
   @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
     #my-picture {
       background-image: url(/images/me@2x.jpg); } }
 
-ul {
-  list-style-position: inside; }
-  ul li {
+ul:not(.owl-carousel) {
+  list-style-position: inside;
+  margin: 1.5625em auto; }
+  ul:not(.owl-carousel) li {
     margin: 0.5em 0; }
-    ul li:before {
+    ul:not(.owl-carousel) li:before {
       content: "\2605";
       padding: 0 0.5em 0 0; }
 
@@ -116,7 +226,7 @@ footer {
   position: relative;
   top: 75px;
   height: 75px;
-  background: #3cc812;
+  background: #3CC812;
   color: #FFF; }
   footer a {
     text-transform: uppercase;
@@ -127,8 +237,13 @@ footer {
     position: absolute;
     top: 35px;
     left: 200px; }
+    @media (max-width: 500px) {
+      footer nav {
+        left: 150px; } }
   @media (max-width: 500px) {
     footer {
       font-size: 0.75em; }
       footer nav {
         top: 1.875em; } }
+
+/*# sourceMappingURL=styles.css.map */

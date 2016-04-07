@@ -6,7 +6,7 @@ body {
   padding: em(20) 0 0 0;
   font: {
     size: 16px;
-    family: $quantico; 
+    family: $quantico;
   }
   color: $dark-grey;
   @include antialias;
@@ -27,15 +27,20 @@ h1 {
   }
   font: {
     weight: bold;
-    size: em(48);
+    size: em(46);
   }
   line-height: 1.2;
   &:after {
     display: block;
     content: "\00a0";
     background: $green;
-    @include size(320px 1px);
+    @include size(75vw 1px);
+    max-width: 320px;
     margin: em(8) auto 0 auto;
+  }
+  span {
+    display: block;
+    font-size: 0.6em;
   }
 }
 
@@ -46,6 +51,138 @@ h2 {
   font: {
     weight: bold;
 
+  }
+}
+
+h3 {
+  text: {
+  }
+  font: {
+    weight: bold;
+  }
+}
+
+h4 {
+  text: {
+    transform: uppercase;
+  }
+  font: {
+
+  }
+}
+.owl-item {
+  h4 {
+    margin: 1vw 0 0 0;
+  }
+}
+
+.columns {
+  width: 90vw;
+  margin: 0 auto 2vw auto;
+  h2, h3, h4 {
+    text-align: center;
+  }
+  p:first-child {
+    margin-top: 0;
+  }
+  & > div {
+    display: inline-block;
+    margin: 2vw;
+    box-sizing: border-box;
+    overflow: hidden;
+    width: 15vw;
+    vertical-align: top;
+    &:last-child {
+      width: 66vw;
+      &:after {
+        display: block;
+        content: "\00a0";
+        background: $green;
+        @include size(75% 1px);
+        max-width: 320px;
+        margin: em(40) auto 0 auto;
+      }
+    }
+  }
+  &:last-child {
+    & > div {
+      &:last-child {
+        &:after {
+          display: none;
+        }
+      }
+    }
+  }
+  @media (max-width: 800px) {
+    display: block;
+    width: 100%;
+    & > div {
+      display: block;
+      margin: 5vw 0 0 0;
+      width: auto;
+      &:last-child {
+        width: auto;
+        &:after {
+          margin: em(50) auto 0 auto;
+        }
+      }
+    }
+    &:last-child {
+      & > div {
+        padding: 0;
+      }
+    }
+  }
+}
+
+#nursegrid-logo {
+  display: block;
+  width: 90%;
+  max-width: 200px;
+  margin: 0 auto;
+}
+#roundhouse-logo {
+  display: block;
+  width: 85%;
+  max-width: 250px;
+  margin: 0 auto;
+}
+#web-devices {
+  display: block;
+  width: 90%;
+  max-width: 350px;
+  margin: 0 auto;
+}
+
+.rh-link {
+  overflow: hidden;
+  width: 100%;
+  img {
+    width: 100%;
+    // transform: scale(1.2);
+  }
+}
+
+.owl-carousel {
+  margin: 2vw 0 0 0;
+  img {
+    backface-visibility: hidden;
+    transform: translateZ(0) scale(1.0, 1.0);
+  }
+}
+
+.images-grid {
+  text-align: center;
+  .tall-slide {
+    display: inline-block;
+    width: auto;
+    margin: 0 5vw;
+    max-height: 30vw;
+  }
+  .wide-slide {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
   }
 }
 
@@ -63,15 +200,30 @@ a {
   }
 }
 
+.block-link {
+  display: block;
+  line-height: 18px;
+  margin: em(25) 0;
+  transform: translateY(0);
+  transition: transform 250ms ease-out;
+  &:hover {
+    transform: translateY(-10px);
+  }
+}
+
 .left {
   display: inline-block;
-  float: left; 
+  float: left;
   overflow: hidden;
 }
 .right {
   display: inline-block;
   float: right;
   overflow: hidden;
+}
+
+.text-center {
+  text-align: center;
 }
 
 main {
@@ -92,13 +244,18 @@ main {
     size: 150px 150px;
     color: $green;
   }
+  @media (max-width: 500px) {
+    @include size(100);
+    background-size: 100px 100px;
+  }
   @include hidpi() {
     background-image: url(/images/me@2x.jpg);
   }
 }
 
-ul {
+ul:not(.owl-carousel) {
   list-style-position: inside;
+  margin: em(25) auto;
   li {
     margin: em(8) 0;
     &:before {
@@ -126,6 +283,9 @@ footer {
     position: absolute;
     top: 35px;
     left: 200px;
+    @media (max-width: 500px) {
+      left: 150px;
+    }
   }
   @media (max-width: 500px) {
     font: {
