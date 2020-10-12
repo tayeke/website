@@ -4,24 +4,28 @@
   font-style: normal;
   src: url("../../fonts/quantico/quantico-regular-webfont.eot");
   src: url("../../fonts/quantico/quantico-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/quantico/quantico-regular-webfont.woff") format("woff"), url("../../fonts/quantico/quantico-regular-webfont.ttf") format("truetype"), url("../../fonts/quantico/quantico-regular-webfont.svg#Quantico") format("svg"); }
+
 @font-face {
   font-family: Quantico;
   font-weight: bold;
   font-style: normal;
   src: url("../../fonts/quantico/quantico-bold-webfont.eot");
   src: url("../../fonts/quantico/quantico-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/quantico/quantico-bold-webfont.woff") format("woff"), url("../../fonts/quantico/quantico-bold-webfont.ttf") format("truetype"), url("../../fonts/quantico/quantico-bold-webfont.svg#Quantico") format("svg"); }
+
 @font-face {
   font-family: Quantico;
   font-weight: normal;
   font-style: italic;
   src: url("../../fonts/quantico/quantico-italic-webfont.eot");
   src: url("../../fonts/quantico/quantico-italic-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/quantico/quantico-italic-webfont.woff") format("woff"), url("../../fonts/quantico/quantico-italic-webfont.ttf") format("truetype"), url("../../fonts/quantico/quantico-italic-webfont.svg#Quantico") format("svg"); }
+
 @font-face {
   font-family: Quantico;
   font-weight: bold;
   font-style: italic;
   src: url("../../fonts/quantico/quantico-bolditalic-webfont.eot");
   src: url("../../fonts/quantico/quantico-bolditalic-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/quantico/quantico-bolditalic-webfont.woff") format("woff"), url("../../fonts/quantico/quantico-bolditalic-webfont.ttf") format("truetype"), url("../../fonts/quantico/quantico-bolditalic-webfont.svg#Quantico") format("svg"); }
+
 body {
   padding: 1.25em 0 0 0;
   font-size: 16px;
@@ -245,5 +249,3 @@ footer {
       font-size: 0.75em; }
       footer nav {
         top: 1.875em; } }
-
-/*# sourceMappingURL=styles.css.map */

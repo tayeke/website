@@ -1,5 +1,3 @@
-"use strict";
-
 function initCarousels() {
   $('.owl-carousel').owlCarousel({
     loop: true,
